@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2FEEDAE91C99870C006DFE02 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEEDAE81C99870C006DFE02 /* main.swift */; };
+		2FEEDAF61C998730006DFE02 /* TDD_Day2_HomeworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEEDAF51C998730006DFE02 /* TDD_Day2_HomeworkTests.swift */; };
+		2FEEDAFB1C99875B006DFE02 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEEDAE81C99870C006DFE02 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +27,20 @@
 /* Begin PBXFileReference section */
 		2FEEDAE51C99870C006DFE02 /* TDD_Day2_Homework */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TDD_Day2_Homework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FEEDAE81C99870C006DFE02 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		2FEEDAF31C998730006DFE02 /* TDD_Day2_HomeworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDD_Day2_HomeworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FEEDAF51C998730006DFE02 /* TDD_Day2_HomeworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDD_Day2_HomeworkTests.swift; sourceTree = "<group>"; };
+		2FEEDAF71C998730006DFE02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2FEEDAE21C99870C006DFE02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FEEDAF01C998730006DFE02 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				2FEEDAE71C99870C006DFE02 /* TDD_Day2_Homework */,
+				2FEEDAF41C998730006DFE02 /* TDD_Day2_HomeworkTests */,
 				2FEEDAE61C99870C006DFE02 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				2FEEDAE51C99870C006DFE02 /* TDD_Day2_Homework */,
+				2FEEDAF31C998730006DFE02 /* TDD_Day2_HomeworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +74,15 @@
 				2FEEDAE81C99870C006DFE02 /* main.swift */,
 			);
 			path = TDD_Day2_Homework;
+			sourceTree = "<group>";
+		};
+		2FEEDAF41C998730006DFE02 /* TDD_Day2_HomeworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				2FEEDAF51C998730006DFE02 /* TDD_Day2_HomeworkTests.swift */,
+				2FEEDAF71C998730006DFE02 /* Info.plist */,
+			);
+			path = TDD_Day2_HomeworkTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +105,23 @@
 			productReference = 2FEEDAE51C99870C006DFE02 /* TDD_Day2_Homework */;
 			productType = "com.apple.product-type.tool";
 		};
+		2FEEDAF21C998730006DFE02 /* TDD_Day2_HomeworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FEEDAF81C998730006DFE02 /* Build configuration list for PBXNativeTarget "TDD_Day2_HomeworkTests" */;
+			buildPhases = (
+				2FEEDAEF1C998730006DFE02 /* Sources */,
+				2FEEDAF01C998730006DFE02 /* Frameworks */,
+				2FEEDAF11C998730006DFE02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TDD_Day2_HomeworkTests;
+			productName = TDD_Day2_HomeworkTests;
+			productReference = 2FEEDAF31C998730006DFE02 /* TDD_Day2_HomeworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +133,9 @@
 				ORGANIZATIONNAME = Tyler;
 				TargetAttributes = {
 					2FEEDAE41C99870C006DFE02 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					2FEEDAF21C998730006DFE02 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
@@ -110,9 +153,20 @@
 			projectRoot = "";
 			targets = (
 				2FEEDAE41C99870C006DFE02 /* TDD_Day2_Homework */,
+				2FEEDAF21C998730006DFE02 /* TDD_Day2_HomeworkTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FEEDAF11C998730006DFE02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2FEEDAE11C99870C006DFE02 /* Sources */ = {
@@ -120,6 +174,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FEEDAE91C99870C006DFE02 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FEEDAEF1C998730006DFE02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FEEDAFB1C99875B006DFE02 /* main.swift in Sources */,
+				2FEEDAF61C998730006DFE02 /* TDD_Day2_HomeworkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +283,28 @@
 			};
 			name = Release;
 		};
+		2FEEDAF91C998730006DFE02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TDD_Day2_HomeworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.apple.TDD-Day2-HomeworkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2FEEDAFA1C998730006DFE02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TDD_Day2_HomeworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.apple.TDD-Day2-HomeworkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -237,6 +322,14 @@
 			buildConfigurations = (
 				2FEEDAED1C99870C006DFE02 /* Debug */,
 				2FEEDAEE1C99870C006DFE02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2FEEDAF81C998730006DFE02 /* Build configuration list for PBXNativeTarget "TDD_Day2_HomeworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FEEDAF91C998730006DFE02 /* Debug */,
+				2FEEDAFA1C998730006DFE02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

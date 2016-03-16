@@ -20,7 +20,7 @@ class TDD_Day2_HomeworkTests: XCTestCase {
         super.tearDown()
     }
     
-    func testGetAmount_購賣第1集各1本＿價錢100(){
+    func testGetAmount_購賣第1集各1本_價錢100(){
         
         //Arrange
         let target = Order()
@@ -37,5 +37,26 @@ class TDD_Day2_HomeworkTests: XCTestCase {
         XCTAssertEqual(expected, actual)
         
     }
+    
+    
+    func testGetAmount_購賣第1_2集各1本_價錢190(){
+        
+        //Arrange
+        let target = Order()
+        let harryPorrterBooks = [HarryPotterBook(episode: 1, count: 1),
+                                 HarryPotterBook(episode: 2, count: 1)];
+        
+        
+        let expected:Double = 190;
+        //Act
+        
+        let actual = target.getAmount(harryPorrterBooks)
+        
+        //Assert
+        
+        XCTAssertEqual(expected, actual)
+        
+    }
+
 
 }

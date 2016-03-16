@@ -78,5 +78,27 @@ class TDD_Day2_HomeworkTests: XCTestCase {
         XCTAssertEqual(expected, actual)
         
     }
+    
+    func testGetAmount_購賣第1_2_3_4集各1本_價錢320(){
+        
+        //Arrange
+        let target = Order()
+        let harryPorrterBooks = [
+            HarryPotterBook(episode: 1, count: 1),
+            HarryPotterBook(episode: 2, count: 1),
+            HarryPotterBook(episode: 3, count: 1),
+            HarryPotterBook(episode: 4, count: 1)];
+        
+        
+        let expected:Double = 320;
+        //Act
+        
+        let actual = target.getAmount(harryPorrterBooks)
+        
+        //Assert
+        
+        XCTAssertEqual(expected, actual)
+        
+    }
 
 }

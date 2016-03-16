@@ -124,7 +124,7 @@ class TDD_Day2_HomeworkTests: XCTestCase {
         
     }
     
-    func testGetAmount_購賣第1_2集各1本＿第3集2本_價錢370(){
+    func testGetAmount_購賣第1_2集各1本_第3集2本_價錢370(){
         
         //Arrange
         let target = Order()
@@ -145,6 +145,42 @@ class TDD_Day2_HomeworkTests: XCTestCase {
         
     }
     
+    func testGetAmount_購賣第1集1本_第2_3集各2本_價錢460(){
+        
+        //Arrange
+        let target = Order()
+        let harryPorrterBooks = [
+            HarryPotterBook(episode: 1, count: 1),
+            HarryPotterBook(episode: 2, count: 2),
+            HarryPotterBook(episode: 3, count: 2)];
+        
+        
+        let expected:Double = 460;
+        //Act
+        
+        let actual = target.getAmount(harryPorrterBooks)
+        
+        //Assert
+        
+        XCTAssertEqual(expected, actual)
+        
+    }
 
-
+    func testGetAmount_購賣0本＿價錢0(){
+        
+        //Arrange
+        let target = Order()
+        let harryPorrterBooks = [HarryPotterBook]();
+        
+        
+        let expected:Double = 0;
+        //Act
+        
+        let actual = target.getAmount(harryPorrterBooks)
+        
+        //Assert
+        
+        XCTAssertEqual(expected, actual)
+        
+    }
 }

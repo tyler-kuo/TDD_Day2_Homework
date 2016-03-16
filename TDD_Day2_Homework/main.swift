@@ -15,8 +15,25 @@ class Order{
     func getAmount(products : Array<HarryPotterBook>) -> Double{
         
         var bookgroupCounts = [Int]()
+        var sortProudcts = [HarryPotterBook]()
         var amount = 0.0
-        for product in products{
+        
+        products.sort { (book1, book2) -> Bool in
+            book1.episode > book2.episode
+            }.map {
+                if sortProudcts.count == 0{
+                    sortProudcts.append($0)
+                }else{
+                    if sortProudcts.last?.episode == $0.episode{
+                        sortProudcts.last!.count += $0.count
+                    }else{
+                        sortProudcts.append($0)
+                    }
+                }
+        }
+        
+        
+        for product in sortProudcts{
             for index in 1...product.count{
                 if bookgroupCounts.count < index{
                     bookgroupCounts.append(1)

@@ -24,6 +24,8 @@ class Order{
             preferential = 0.95
         case 3:
             preferential = 0.9
+        case 4:
+            preferential = 0.8
         default:
             preferential = 1.0
         }

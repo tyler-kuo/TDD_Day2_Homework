@@ -22,6 +22,8 @@ class Order{
         switch count{
         case 2:
             preferential = 0.95
+        case 3:
+            preferential = 0.9
         default:
             preferential = 1.0
         }

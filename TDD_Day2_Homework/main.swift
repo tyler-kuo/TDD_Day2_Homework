@@ -17,7 +17,18 @@ class Order{
         
         let count = products.count
         
-        return Double(count) * 100.0
+        var preferential = 1.0
+        
+        switch count{
+        case 2:
+            preferential = 0.95
+        default:
+            preferential = 1.0
+        }
+        
+        
+        
+        return Double(count) * 100.0 * preferential
     }
     
 }
